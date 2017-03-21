@@ -1,0 +1,76 @@
+<html>
+<head>
+    <title>Affiliate Deeplink</title>	
+    <style>
+        body{
+            width: 900px;            
+        }
+        
+        label{
+            width: 120px;
+            display: block;
+            
+        }
+    </style>
+</head>
+<body>
+    Para que o affiliate deeplink funcione perfeitamente será necessário configurar as informações abaixo de cadas programa de afiliado, caso tenha dúvida em alguma das informações abaixo, entre em contato com seu Account Manager.
+    <br/><br/>
+    
+    <div>
+        <h2><img src="http://www.google.com/s2/favicons?domain=actionpay.net" /> Actionpay</h2> 
+        <div><label for="actionpayapikey">API Key:</label> <input id="actionpayapikey" type="text" /></div><br/>
+        Infelizmente no caso da Actionpay será necessário solicitar a API Key ao seu Account Manager.
+    </div>
+    <br/>
+    
+    <div>
+        <h2><img src="http://www.google.com/s2/favicons?domain=afiliados.com.br" /> Afiliados B2W</h2> 
+        <div><label for="afiliadosfraq">FRANQ:</label> <input id="afiliadosfraq" type="text" /></div><br/>
+        Efetue login no painel do <a href="http://afiliados.com.br/" target="_blank">Afiliados</a>, no canto inferior a esquerda existe a ferramenta Gerador de Links, aonde é possível verificar o código do FRANQ no campo "Selecione o site", o FRAQ segue o padrão AFL-00-000000.
+    </div>
+    <br/>
+    
+    <div>
+        <h2><img src="http://www.google.com/s2/favicons?domain=afilio.com.br" /> Afilio</h2> 
+        <div><label for="afiliotoken">Token:</label> <input id="afiliotoken" type="text" /></div><br/>
+        <div><label for="afilioaffid">AffID:</label> <input id="afilioaffid" type="text" /></div><br/>
+        <div><label for="afiliositeid">SiteID:</label> <input id="afiliositeid" type="text" /></div><br/>
+        Efetue login no painel do <a href="http://afilio.com.br/" target="_blank">Afilio</a>, no menu "Minhas Informações", clique em "Gerar Token para API", copie o token e cole no primeiro campo, agora para saber seu AffID e SiteID <a href="http://v2.afilio.com.br/aff/aff_ban.php?aff_deep_link_info=1&nType=deeplink" target="_blank">clique aqui</a>, o AffID é o "Seu ID de usuário" e SiteID o "Seu ID no site".
+    </div>
+    <br/>
+    
+    <div>
+        <h2><img src="http://www.google.com/s2/favicons?domain=cityads.com" /> Cityads</h2> 
+        <div><label for="cityadsremoteauth">Remote_auth:</label> <input id="cityadsremoteauth" type="text" /></div><br/>
+        Efetue login no painel do <a href="http://http://cityads.com/" target="_blank">Cityads</a>, clique em API no menu a esquerda, copie o Remote_auth.
+    </div>
+    <br/>
+    
+    <div>
+        <h2><img src="http://www.google.com/s2/favicons?domain=lomadee.com" /> Lomadee</h2> 
+        <div><label for="lomadeesourceid">Lomadee SourceID:</label> <input id="lomadeesourceid" type="text" /></div><br/>
+        Efetue login no painel do <a href="https://www.lomadee.com" target="_blank">Lomadee</a>, acesse "Ferramentas > Códigos de Identificação", caso não exista nenhum Source ID, crie um e adicione no campo acima. (Padrão numérico de 8 dígitos)
+    </div>
+    <br/>
+    
+    <div>
+        <h2><img src="http://www.google.com/s2/favicons?domain=rakuten.com" /> Rakuten</h2> 
+        <div><label for="rakutenid">Rakuten ID:</label> <input id="rakutenid" type="text" /></div><br/> 
+        Efetue login no painel da Rakuten, no menu "Links > Deep Links", gere um deeplink qualquer, no link gerado existe o parâmetro ID, copie e cole no campo acima.
+    </div>
+    <br/>
+        
+    <div>
+        <h2><img src="http://www.google.com/s2/favicons?domain=zanox.com" /> Zanox</h2> 
+        <div><label for="zanoxconnectid">Zanox ConnectID:</label> <input id="zanoxconnectid" type="text" /></div><br/>
+        <div><label for="zanoxadspace">Zanox AdspaceID:</label> <input id="zanoxadspace" type="text" /></div>
+        Efetue login no painel da <a href="http://www.zanox.com/br/" target="_blank">Zanox</a>, na tela inicial do painel o número abaixo do adspace é o AdspaceID, agora clique na conta, no menu "Link e ferramentas > API", será exibido o ConnectID. 
+    </div>
+    <br/>
+    
+        
+    <br/><button id="save">Salvar</button>    
+    <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqwaO1f0/EMmXow4ITYEeyNgOFGmGAg002HeHgvF5+zlIl/p8yv+rl5G717x8DF6wzuQHZrZPrIjJbhQgnCR4GtUKACWBV1g7RsHr0LtJxO+ew2psue8LJ4J8424hj8J+7qnND/ZW2p8Lxam3qzuRryK2kkMfVEnPmqoOgJ2rLfhgUQ2LCILjZXKqDMJbb2e6JXkbcxcOl1rQX1KA+bxXAgWoM5NdzRNpHiwlutN2ToYgqmJbkrBDsB00hQOX9kSuUowi+2QO17JZ+Z3gNz18spougPF2KNeZkaOzMXCg3I4Au9bW0kYwipOpeTr4fm0kPcPhB4G/oH0QuKrIHRSCSwIDAQAB",
+    "name": "Affiliate Deeplink",
+    "description": "Gerador de Deeplink para Zanox, Afilio, Lomadee, Afiliados, Rakuten, Actionpay e Cityads",
+    "version": "1.0.11",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_icon": {"19": "link-open-flat.png", "38": "link-open-flat.png"},
+        "default_title": "Affiliate Deeplink"
+    },
+    "background": {"persistent": false, "scripts": ["background.js"]},
+    "options_page": "options.html",
+    "web_accessible_resources": ["img/*"],
+    "icons": {"16": "link-open-flat.png", "128": "link-open-flat.png"},
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "notifications",
+        "storage",        
+        "activeTab",
+        "http://*.buscape.com/*",
+        "http://*.zanox.com/*",
+        "http://*.click.linksynergy.com/*",
+        "http://*.afilio.com.br/*",
+        "http://*.actionpay.net/*",
+        "http://*.cityads.com/*"
+    ]
+}
